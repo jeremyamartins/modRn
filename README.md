@@ -1,1 +1,1 @@
-modRn
+ModRn Repairs is a website made by me for anyone view repair solutions for any mobile device or trouble shoot any device. Allowing my contact info openly available, and ensuring each customer with a genuine responsibility of a valuable repair
