@@ -1,0 +1,170 @@
+/* body{
+    /* background-color: cornflowerblue; */
+    /* background-color:linear-gradient(to bottom, rgba(0, 4, 255, 0.75) 0%, rgba(4, 252, 252, 0.75) 100%); */
+
+/* } 
+
+/* #headertext{
+    /* text-align: center;
+    color: black;
+    font-size: large;  */
+    /* background-color: wheat; */
+    /* width: 934px;
+    height: 100px;
+   margin: auto; */
+/* } */
+
+/* #logopic{
+    padding-left: 55px;
+    flex-direction: inherit;
+}
+#about{
+    text-align: center;
+    font-size: 50px;
+} */
+
+/* #aboutp{
+    flex-direction: column;
+    display: inline;
+} */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+html{
+    font-size: 10px;
+    font-family: "Roboto Cn", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+header{
+    width: 100%;
+    height: 110vh;
+    /* background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.5)), url("iprepairimg.jpeg") center no-repeat; */
+    background: linear-gradient(57deg, #00c6a7, #1e4d92);
+    background-size: cover;
+    position: fixed;
+    clip-path:polygon(0% 0%, 100% 0%, 100% 55%, 0% 90.8%);0
+
+}
+
+.container{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.brand{
+    font-size: 3rem;
+    font-weight: 300;
+    transform: translateX(-100rem);
+    animation: slideIn .5s forwards;
+}
+
+.brand span{
+    color:crimson;
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    transform: translateX(100rem);
+    animation: slideIn .5s forwards;
+}
+
+
+nav ul li:nth-child(1){
+    animation-delay: 0s;
+}
+nav ul li:nth-child(2){
+    animation-delay: .5s;
+}
+nav ul li:nth-child(3){
+    animation-delay: 1s;
+}
+nav ul li:nth-child(4){
+    animation-delay: 1.5s;
+}
+
+
+nav ul li a{
+    padding: 1rem 0;
+    margin: 0 3rem;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+nav ul li a:cbvlast-child{
+    margin-right:0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: crimson;
+    left: 0;
+    transform:scaleX(0);
+    transition: all .5s;
+}   
+nav ul li a::before{
+    top:0;
+    transform-origin: left;
+}
+nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+    transform: scaleX(1);
+}
+
+@keyframes slideIn {
+    from{
+
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+#abouttext{
+    text-align: center;
+    color: #eee;
+}
+
+#ipadimg{
+    height: 90em;
+    width: 80em;
+    position: relative;
+    top: 1.5em;
+    bottom: 0px;
+    left:9em;
+    right:0px;
+    margin-bottom: 20%;
+    /* object-fit: contain; */
+}
